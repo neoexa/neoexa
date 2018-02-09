@@ -18,7 +18,7 @@
           graphql(
             `
               {
-                allMarkdownRemark(limit: 50) {
+                allMarkdownRemark(limit: 20) {
                   edges {
                     node {
                         id
@@ -26,6 +26,7 @@
                         frontmatter {
                             path
                             title
+                            date
                         }
                     }
                   }
